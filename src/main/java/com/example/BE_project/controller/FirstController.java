@@ -11,4 +11,10 @@ public class FirstController {
         model.addAttribute("username", "지환");
         return "greetings";
     }
+
+    @GetMapping("/bye")
+    public String seeYouNext(Model model){
+        model.addAttribute("nickname", "변지환");
+        return "goodbye";
+    }
 }
